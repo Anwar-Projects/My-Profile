@@ -1,5 +1,10 @@
 <h1>Hello, I'm <strong>Anwar Mohammed</strong></h1>
 
+<!-- LinkedIn button -->
+<a href="https://www.linkedin.com/in/anwar-mohammed-cisa-cissp-oscp-b6528b65/" target="_blank">
+  <button style="background-color: #0e76a8; color: white; border: none; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; border-radius: 5px;">Connect with me on LinkedIn</button>
+</a>
+
 <p>
     I am an experienced cybersecurity professional, honored with multiple accolades for leadership and technical contributions in the field. With over two decades of expertise in IT audits, SOC operations, governance, and compliance, my journey has led me to specialize in transforming Security Operations Centers (SOC) and harnessing advanced technologies like AI and machine learning to enhance threat detection and incident response.
 </p>
@@ -73,9 +78,25 @@
 
 <h2>Certifications</h2>
 <ul>
-    <li><a href="https://www.isaca.org/credentialing/cisa">CISA (Certified Information Systems Auditor)</a></li>
-    <li><a href="https://www.isc2.org/Certifications/CISSP">CISSP (Certified Information Systems Security Professional)</a></li>
-    <li><a href="https://www.offensive-security.com/pwk-oscp/">OSCP (Offensive Security Certified Professional)</a></li>
+    <li><a href="https://www.credential.net/7176592b-81e7-4443-a460-e700c721c64e" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Offensive_Security_Logo.svg" alt="OSCP" width="50"> OSCP</a>
+    </li>
+    <li><a href="https://www.credly.com/earner/earned/badge/f4de7cf5-8ae5-4133-977a-c1329473a40c" target="_blank">
+        <img src="https://www.isc2.org/-/media/ISC2/Certifications/Logos/CISSP.ashx" alt="CISSP" width="50"> CISSP</a>
+    </li>
+    <li><a href="https://www.credly.com/badges/7d49301b-86ab-4467-8b6c-d8549a0cf4eb" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/ISACA_logo.png" alt="CISA" width="50"> CISA</a>
+    </li>
+</ul>
+
+<h2>Awards</h2>
+<ul>
+    <li><a href="https://www.verix.io/certificates/93645" target="_blank">
+        <img src="https://stevieawards.com/sites/default/files/images/SIAF/Stevies-IBA-Logo.png" alt="Stevie Awards IBA" width="50"> International Business Awards®: Anwar Mohammed</a>
+    </li>
+    <li><a href="https://www.verix.io/certificates/93645" target="_blank">
+        <img src="https://stevieawards.com/sites/default/files/styles/story_image/public/sage_logo_horizontal.png" alt="Stevie Awards for Great Employers" width="50"> Stevie® Awards for Great Employers: Anwar Mohammed</a>
+    </li>
 </ul>
 
 <h2>Projects</h2>
