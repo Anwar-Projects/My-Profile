@@ -1,0 +1,141 @@
+{# README.md.j2 - Jinja2 Template for GitHub Profile README #}
+{# Generated from data/profile.yaml - DO NOT EDIT DIRECTLY #}
+
+<!-- 
+  Generated from templates/README.md.j2 using data/profile.yaml
+  Last generated: {{ generation_date }}
+  Theme: {{ theme }}
+-->
+
+<div align="center">
+
+# Hello, I'm **{{ personal.name }}** 👋
+
+<!-- Dynamic Badges -->
+<p>
+  <a href="{{ social.linkedin }}">
+    <img src="https://img.shields.io/badge/LinkedIn-0072b1?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  {% if social.github %}
+  <a href="{{ social.github }}">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  {% endif %}
+  {% if social.twitter %}
+  <a href="{{ social.twitter }}">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/>
+  </a>
+  {% endif %}
+</p>
+
+<!-- Profile Views Counter -->
+<img src="https://komarev.com/ghpvc/?username={{ github_stats.username }}&label=Profile%20Views&color=0e75b6&style=flat" alt="Profile Views" />
+
+</div>
+
+---
+
+## 📝 About Me
+
+{{ summary.full }}
+
+### 🎯 Objective
+
+{{ objective }}
+
+---
+
+## 💼 Skills
+
+| Skill | Associated Project | Status |
+|-------|-------------------|--------|
+{% for skill in skills %}
+| {{ skill.name }} | *{{ skill.project }}* ({% if skill.status == 'completed' %}✅{% elif skill.status == 'in-progress' %}🔄{% else %}📋{% endif %} {{ skill.status }}) | {{ skill.level }} |
+{% endfor %}
+
+---
+
+## 🛠️ Tools
+
+### Network
+{% for tool in tools.network %}
+- **{{ tool.name }}** - {{ tool.description }}
+{% endfor %}
+
+### Endpoint
+{% for tool in tools.endpoint %}
+- **{{ tool.name }}** - {{ tool.description }}
+{% endfor %}
+
+### SIEM
+{% for tool in tools.siem %}
+- **{{ tool.name }}** - {{ tool.description }}
+{% endfor %}
+
+---
+
+## 🏆 Certifications
+
+<p>
+{% for cert in certifications %}
+  <a href="{{ cert.url }}" target="_blank">
+    <img src="{{ cert.image }}" alt="{{ cert.name }}" width="50" title="{{ cert.full_name }}">
+  </a>
+{% endfor %}
+</p>
+
+---
+
+## 🥇 Awards
+
+<p>
+{% for award in awards %}
+  <a href="{{ award.url }}" target="_blank">
+    <img src="{{ award.image }}" alt="{{ award.name }}" width="100" title="{{ award.name }}">
+  </a>
+{% endfor %}
+</p>
+
+---
+
+## 📂 Projects
+
+| Project | Description | Status |
+|---------|-------------|--------|
+{% for project in projects %}
+| {{ project.name }} | {{ project.description }} | {% if project.status == 'completed' %}✅{% elif project.status == 'in-progress' %}🔄{% else %}📋{% endif %} {{ project.status }} |
+{% endfor %}
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username={{ github_stats.username }}&show_icons={{ github_stats.show_icons }}&theme={{ github_stats.theme }}&hide_border={{ github_stats.hide_border }}&count_private={{ github_stats.count_private }}&include_all_commits={{ github_stats.include_all_commits }}" alt="GitHub Stats" />
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user={{ github_stats.username }}&theme={{ github_stats.theme }}" alt="GitHub Streak" />
+
+</div>
+
+{% if trophies.enabled %}
+## 🏅 GitHub Trophies
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username={{ github_stats.username }}&theme={{ trophies.theme }}&row={{ trophies.row }}&column={{ trophies.column }}&no-frame=false" alt="GitHub Trophies" />
+
+</div>
+{% endif %}
+
+---
+
+## 🔗 Quick Links
+
+- [Contributing Guidelines](CONTRIBUTING.md)
+- [Link Directory](LINKS.md)
+- [Changelog](CHANGELOG.md)
+
+---
+
+*Last updated: {{ generation_date }} | Generated from [data/profile.yaml](data/profile.yaml)*

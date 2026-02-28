@@ -1,0 +1,25 @@
+# Arabic locale messages
+locale: ar
+
+messages:
+  greeting: "مرحباً، أنا"
+  about_me: "نبذة عني"
+  objective: "الهدف"
+  skills: "المهارات"
+  tools: "الأدوات"
+  certifications: "الشهادات"
+  awards: "الجوائز"
+  projects: "المشاريع"
+  status_planned: "مخطط"
+  status_in_progress: "قيد التنفيذ"
+  status_completed: "مكتمل"
+  github_stats: "إحصائيات GitHub"
+  trophies: "جوائز GitHub"
+  quick_links: "روابط سريعة"
+  last_updated: "آخر تحديث"
+  generated_from: "مُنشأ من"
+
+badges:
+  profile_views: "مشاهدات الملف"
+  linkedin: "LinkedIn"
+  github: "GitHub"
