@@ -1,0 +1,25 @@
+# English locale messages
+locale: en
+
+messages:
+  greeting: "Hello, I'm"
+  about_me: "About Me"
+  objective: "Objective"
+  skills: "Skills"
+  tools: "Tools"
+  certifications: "Certifications"
+  awards: "Awards"
+  projects: "Projects"
+  status_planned: "Planned"
+  status_in_progress: "In Progress"
+  status_completed: "Completed"
+  github_stats: "GitHub Stats"
+  trophies: "GitHub Trophies"
+  quick_links: "Quick Links"
+  last_updated: "Last Updated"
+  generated_from: "Generated from"
+
+badges:
+  profile_views: "Profile Views"
+  linkedin: "LinkedIn"
+  github: "GitHub"

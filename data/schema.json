@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Profile Data Schema",
+  "type": "object",
+  "required": ["personal", "summary", "skills", "tools", "certifications", "projects"],
+  "properties": {
+    "personal": {
+      "type": "object",
+      "required": ["name", "title", "linkedin"],
+      "properties": {
+        "name": { "type": "string" },
+        "title": { "type": "string" },
+        "location": { "type": "string" },
+        "timezone": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "linkedin": { "type": "string", "format": "uri" },
+        "github": { "type": "string", "format": "uri" }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["short", "full"],
+      "properties": {
+        "short": { "type": "string", "maxLength": 200 },
+        "full": { "type": "string" }
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "project", "status", "level"],
+        "properties": {
+          "name": { "type": "string" },
+          "project": { "type": "string" },
+          "project_url": { "type": "string", "format": "uri" },
+          "status": { "enum": ["planned", "in-progress", "completed"] },
+          "level": { "enum": ["beginner", "intermediate", "advanced", "expert"] }
+        }
+      }
+    },
+    "tools": {
+      "type": "object",
+      "properties": {
+        "network": { "type": "array", "items": { "$ref": "#/definitions/tool" } },
+        "endpoint": { "type": "array", "items": { "$ref": "#/definitions/tool" } },
+        "siem": { "type": "array", "items": { "$ref": "#/definitions/tool" } }
+      }
+    },
+    "certifications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "url", "image"],
+        "properties": {
+          "name": { "type": "string" },
+          "full_name": { "type": "string" },
+          "issuer": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "image": { "type": "string", "format": "uri" },
+          "year": { "type": "integer", "minimum": 1900, "maximum": 2100 }
+        }
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "description", "status"],
+        "properties": {
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "status": { "enum": ["planned", "in-progress", "completed"] },
+          "tags": { "type": "array", "items": { "type": "string" } },
+          "tech": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "seo": {
+      "type": "object",
+      "properties": {
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "keywords": { "type": "array", "items": { "type": "string" } },
+        "author": { "type": "string" }
+      }
+    },
+    "themes": {
+      "type": "object",
+      "properties": {
+        "default": { "type": "string" },
+        "available": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" },
+              "primary": { "type": "string" },
+              "accent": { "type": "string" },
+              "text": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "github_stats": {
+      "type": "object",
+      "properties": {
+        "username": { "type": "string" },
+        "show_icons": { "type": "boolean" },
+        "theme": { "type": "string" },
+        "hide_border": { "type": "boolean" }
+      }
+    },
+    "trophies": {
+      "type": "object",
+      "properties": {
+        "enabled": { "type": "boolean" },
+        "theme": { "type": "string" },
+        "row": { "type": "integer", "minimum": 1, "maximum": 10 },
+        "column": { "type": "integer", "minimum": 1, "maximum": 10 }
+      }
+    },
+    "social": {
+      "type": "object",
+      "properties": {
+        "linkedin": { "type": "string", "format": "uri" },
+        "github": { "type": "string", "format": "uri" },
+        "twitter": { "type": "string" },
+        "website": { "type": "string", "format": "uri" }
+      }
+    }
+  },
+  "definitions": {
+    "tool": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" }
+      }
+    }
+  }
+}

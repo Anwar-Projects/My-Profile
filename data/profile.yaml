@@ -1,0 +1,195 @@
+# Profile Data - Anwar Mohammed
+# This file serves as the single source of truth for profile content
+# Used to generate README, resume, and other formats
+
+personal:
+  name: "Anwar Mohammed"
+  title: "Cybersecurity Professional"
+  location: "Dubai, UAE"
+  timezone: "GMT+4"
+  email: "contact@example.com"
+  linkedin: "https://www.linkedin.com/in/anwar-mohammed-cisa-cissp-oscp-b6528b65/"
+  github: "https://github.com/anwarmohammed"
+
+summary:
+  short: "Experienced cybersecurity professional with over two decades of expertise in IT audits, SOC operations, governance, and compliance."
+  full: |
+    I am an experienced cybersecurity professional, honored with multiple accolades for leadership
+    technical contributions in the field. With over two decades of expertise in IT audits, SOC operations,
+    governance, and compliance, my journey has led me to specialize in transforming Security Operations
+    Centers (SOC) and harnessing advanced technologies like AI and machine learning to enhance threat
+    detection and incident response.
+
+objective: |
+  My objective is to continue pioneering cutting-edge cybersecurity solutions, particularly in SOC design
+  and operation, threat intelligence, and incident management. I aim to contribute to global security
+  by leveraging my experience in auditing, cybersecurity governance, and risk management to safeguard
+  critical infrastructures.
+
+skills:
+  - name: "SIEM Implementation and Log Analysis"
+    project: "Detection Lab"
+    project_url: ""
+    status: "planned"
+    level: "expert"
+    
+  - name: "Network Traffic Monitoring and Attack Detection"
+    project: "WiFi Monitoring & WPA Capture"
+    project_url: ""
+    status: "planned"
+    level: "expert"
+    
+  - name: "Security Automation with SOAR"
+    project: "SOC Automation Lab"
+    project_url: ""
+    status: "planned"
+    level: "advanced"
+    
+  - name: "Incident Response Planning and Execution"
+    project: "SOC Incident Management"
+    project_url: ""
+    status: "planned"
+    level: "expert"
+    
+  - name: "Case Management with TheHive"
+    project: "SOC Automation with TheHive"
+    project_url: ""
+    status: "planned"
+    level: "advanced"
+    
+  - name: "Scripting and Automation for Threat Mitigation"
+    project: "Custom Python Scripts for WPA Handshake Captures"
+    project_url: ""
+    status: "planned"
+    level: "advanced"
+
+tools:
+  network:
+    - name: "Wireshark"
+      description: "Network protocol analyzer"
+    - name: "Aircrack-ng"
+      description: "WiFi security auditing"
+    - name: "Airodump-ng"
+      description: "Packet capture and analysis"
+    - name: "Kismet"
+      description: "Wireless network detector"
+      
+  endpoint:
+    - name: "Carbon Black"
+      description: "Endpoint protection platform"
+    - name: "Sysmon"
+      description: "Windows system monitoring"
+    - name: "CrowdStrike Falcon"
+      description: "Cloud-native endpoint protection"
+      
+  siem:
+    - name: "Splunk"
+      description: "Data platform and SIEM"
+    - name: "IBM QRadar"
+      description: "Security intelligence platform"
+    - name: "RSA NetWitness"
+      description: "Network forensics and analytics"
+    - name: "ArcSight"
+      description: "Security information management"
+
+certifications:
+  - name: "OSCP"
+    full_name: "Offensive Security Certified Professional"
+    issuer: "Offensive Security"
+    url: "https://www.credential.net/7176592b-81e7-4443-a460-e700c721c64e"
+    image: "https://images.credly.com/size/680x680/images/ec81134d-e80b-4eb5-ae07-0eb8e1a60fcd/image.png"
+    year: 2023
+    
+  - name: "CISSP"
+    full_name: "Certified Information Systems Security Professional"
+    issuer: "ISC2"
+    url: "https://www.credly.com/earner/earned/badge/f4de7cf5-8ae5-4133-977a-c1329473a40c"
+    image: "https://intrinsecsecurity.com/wp-content/uploads/2023/07/ISC2_CISSP_RGB_Badge.600x600.png"
+    year: 2023
+    
+  - name: "CISA"
+    full_name: "Certified Information Systems Auditor"
+    issuer: "ISACA"
+    url: "https://www.credly.com/badges/7d49301b-86ab-4467-8b6c-d8549a0cf4eb"
+    image: "https://images.credly.com/size/680x680/images/d8b54d17-692a-4151-8e2e-e3c8c1a89ec1/b415cf50edc1955df11b9046c68b7e2debbd41f1.png"
+    year: 2023
+
+awards:
+  - name: "Stevie Awards - International Business Awards"
+    organization: "Stevie Awards"
+    url: "https://www.verix.io/certificates/93645"
+    image: "https://stevieawards.com/sites/default/files/images/SIAF/Stevies-IBA-Logo.png"
+    year: 2023
+    
+  - name: "Stevie Awards for Great Employers"
+    organization: "Stevie Awards"
+    url: "https://www.verix.io/certificates/93645"
+    image: "https://stevieawards.com/sites/default/files/styles/story_image/public/sage_logo_horizontal.png"
+    year: 2023
+
+projects:
+  - name: "Detection Lab"
+    description: "Fully functional SIEM environment to monitor network traffic and simulate attack scenarios"
+    status: "planned"
+    tags: ["siem", "detection", "lab"]
+    tech: ["Splunk", "Wireshark", "VirtualBox"]
+    
+  - name: "WiFi Monitoring & WPA Capture"
+    description: "Custom script to monitor WiFi networks, capture WPA handshakes, and automate cracking"
+    status: "planned"
+    tags: ["wifi", "wireless", "python"]
+    tech: ["Python", "Aircrack-ng", "Scapy"]
+    
+  - name: "SOC Automation Lab"
+    description: "Automation workflow using Shuffle SOAR to streamline incident response and alert triaging"
+    status: "planned"
+    tags: ["soar", "automation", "soc"]
+    tech: ["Shuffle", "TheHive", "MISP"]
+
+# SEO and Analytics
+seo:
+  title: "Anwar Mohammed - Cybersecurity Professional | CISSP | OSCP | CISA"
+  description: "Experienced cybersecurity professional specializing in SOC operations, threat detection, and security governance. CISSP, OSCP, and CISA certified."
+  keywords: ["cybersecurity", "SOC", "CISSP", "OSCP", "CISA", "threat detection", "incident response"]
+  author: "Anwar Mohammed"
+  
+# Theme Configuration
+themes:
+  default: "dark"
+  available:
+    - name: "dark"
+      primary: "#2d333b"
+      accent: "#539bf5"
+      text: "#adbac7"
+    - name: "light"
+      primary: "#ffffff"
+      accent: "#0969da"
+      text: "#24292f"
+    - name: "high-contrast"
+      primary: "#000000"
+      accent: "#00ff00"
+      text: "#ffffff"
+
+# GitHub Stats Configuration
+github_stats:
+  username: "anwarmohammed"
+  show_icons: true
+  theme: "dark"
+  hide_border: false
+  count_private: true
+  include_all_commits: true
+  
+# Trophies
+trophies:
+  enabled: true
+  theme: "dark"
+  row: 2
+  column: 4
+  
+# Social Links
+social:
+  linkedin: "https://www.linkedin.com/in/anwar-mohammed-cisa-cissp-oscp-b6528b65/"
+  github: "https://github.com/anwarmohammed"
+  twitter: ""
+  website: ""
+  email: ""
